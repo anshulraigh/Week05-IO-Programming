@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
@@ -15,6 +15,20 @@
   </properties>
 
   <dependencies>
+    <!-- Jackson Databind dependency for JSON to CSV conversion -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.15.2</version>
+    </dependency>
+
+    <!-- Apache Commons Codec for Base64 encoding and decoding -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.15</version>
+    </dependency>
+
     <dependency>
       <groupId>com.opencsv</groupId>
       <artifactId>opencsv</artifactId>
@@ -28,5 +42,13 @@
       <version>5.11.4</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Added dependency for AES encryption/decryption -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-crypto</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
   </dependencies>
 </project>

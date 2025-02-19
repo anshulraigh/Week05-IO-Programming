@@ -33,6 +33,13 @@
       <version>2.13.3</version>
     </dependency>
 
+    <!-- Everit JSON Schema Validator -->
+    <dependency>
+      <groupId>com.github.erosb</groupId>
+      <artifactId>everit-json-schema</artifactId>
+      <version>1.14.5</version>
+    </dependency>
+
     <!-- JUnit Jupiter for testing -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -70,7 +77,7 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.json.practice.student_json.StudentJson</mainClass>
+                  <mainClass>com.json.hands_on.validate_email_schema.ValidateEmailSchema</mainClass>
                 </transformer>
               </transformers>
             </configuration>
